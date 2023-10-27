@@ -24,17 +24,13 @@ The code presented in this repository test how palaeolithic peoples could hunt d
 ## Scripts
 R code by Corey Bradshaw (<a href="http://github.com/cjabradshaw">@cjabradshaw</a>), Frédérik Saltré (<a href="http://github.com/fredsaltre">@fredsaltre</a>), and Salvador Herrando-Pérez
 
-### Climate hindcasts
-- <code>HadCM3outputs.R</code>: net primary production (kg C m<sup>-2</sup> year<sup>-1</sup>), temperature (°C), and precipitation (mm year<sup>-1</sup>) data (raw and anomalies relative to the present) hindcasted from the <a href="https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/climate-models/hadcm3">Hadley Centre Coupled Model version 3</a> (HadCM3) climate model for the 0.5° × 0.5° lat/lon cells covering Cyprus from 20 ka to the present
-
 ### Chronology
 - <code>calibdate.R</code>: calibrate palaeontological dates for both species, and use Signor-Lipps correction to estimate windows of extinction
 
 ### Cohort-based models
-- <code>base hippo & elephant model.R</code>: stochastic, age-structured demographic projection models for both species
-- <code>CypAspatDemModelMVPsim.R</code>: based on model above, vary founding population size to estimate change in probability of quasi-extinction
-- <code>CypAspatDemModelStaggeredEntry.R</code>: vary frequency and intervals of arrival of different group sizes (up to minimum viable population size calculated above) to determine minimum size of entering groups and frequency of immigration required to minimise quasi-extinction
-- <code>densities.R</code>: bootstrapped estimates of human densities across Europe/Near East during the Late Pleistocene
+- <code>base hippo & elephant model.R</code>: stochastic, age-structured demographic projection models for both megafauna species
+- <code>offtake hippo & elephant model.R</code>: stochastic models simulating incrementing offtake rates for both megafauna species (requires running 'base' models first)
+- <code>meat equivalents hippo & elephant model.R</code>: stochastic models simulating how incrementing population sizes of humans translates to loss of individuals of both megafauna species (requires running 'base' models first)
 
 ### Source functions
 - <code>matrixOperators.r</code>: functions for manipulating matrices for population projections
