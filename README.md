@@ -13,6 +13,7 @@ Project <a href="https://www.ucy.ac.cy/migrate/">MIGRATE</a> seeks to offer nove
 
 ## Papers arising
 - Bradshaw, CJA, C Reepmeyer, F Saltré, A Agapiou, V Kassinadiou, S Demesticha, Z Zomeni, M Polidorou, T Moutsiou. 2023. <a href="http://doi.org/10.21203/rs.3.rs-3468157/v1">Demographic models predict end-Pleistocene arrival and rapid expansion of pre-agropastoralist humans in Cyprus</a>. <em><strong>Research Square</strong></em> (pre-print) doi:10.21203/rs.3.rs-3468157/v1
+- Moutsiou T, C Reepmeyer, V Kassianidou, Z Zomeni, A Agapiou A. 2021. <a href="http://doi.org/10.1371/journal.pone.0258370">Modelling the Pleistocene colonisation of Eastern Mediterranean islandscapes</a>. <em><strong>PLoS One</strong></em> 16:e0258370
 
 ## Focal manuscript
 Bradshaw, CJA, F Saltré, S Herrando-Pérez, C Reepmeyer, T Moutsiou. Human arrival on Cyprus and the mechanisms of hunting native megafauna to extinction (in preparation)
