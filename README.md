@@ -24,9 +24,6 @@ The code presented in this repository test how palaeolithic peoples could hunt d
 ## Scripts
 R code by Corey Bradshaw (<a href="http://github.com/cjabradshaw">@cjabradshaw</a>), Frédérik Saltré (<a href="http://github.com/fredsaltre">@fredsaltre</a>), and Salvador Herrando-Pérez
 
-### Chronology
-- <code>calibdate.R</code>: calibrate palaeontological dates for both species, and use Signor-Lipps correction to estimate windows of extinction
-
 ### Cohort-based models
 - <code>base hippo & elephant model.R</code>: stochastic, age-structured demographic projection models for both megafauna species
 - <code>offtake hippo & elephant model.R</code>: stochastic models simulating incrementing offtake rates for both megafauna species (requires running 'base' models first)
