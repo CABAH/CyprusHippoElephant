@@ -19,6 +19,8 @@ Project <a href="https://www.ucy.ac.cy/migrate/">MIGRATE</a> seeks to offer nove
 ## Focal manuscript
 Bradshaw, CJA, F Saltré, S Herrando-Pérez, C Reepmeyer, T Moutsiou. Human arrival on Cyprus and the mechanisms of hunting native megafauna to extinction (in preparation)
 
+The code presented in this repository test how palaeolithic peoples could hunt dwarf hippopotamus (<em>Phanourios minor</em>) and dwarf elephants (<em>Palaeoloxodon cypriotes</em>) to extinction in the Late Pleistocene.
+
 ## Scripts
 R code by Corey Bradshaw (<a href="http://github.com/cjabradshaw">@cjabradshaw</a>), Frédérik Saltré (<a href="http://github.com/fredsaltre">@fredsaltre</a>), and Salvador Herrando-Pérez
 
@@ -26,24 +28,18 @@ R code by Corey Bradshaw (<a href="http://github.com/cjabradshaw">@cjabradshaw</
 - <code>HadCM3outputs.R</code>: net primary production (kg C m<sup>-2</sup> year<sup>-1</sup>), temperature (°C), and precipitation (mm year<sup>-1</sup>) data (raw and anomalies relative to the present) hindcasted from the <a href="https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/climate-models/hadcm3">Hadley Centre Coupled Model version 3</a> (HadCM3) climate model for the 0.5° × 0.5° lat/lon cells covering Cyprus from 20 ka to the present
 
 ### Chronology
-- <code>calibdate.R</code>: calibrate oldest human archaeological evidence for Cyprus, and use Signor-Lipps correction to estimate window of first entry
+- <code>calibdate.R</code>: calibrate palaeontological dates for both species, and use Signor-Lipps correction to estimate windows of extinction
 
-### Demography
-- <code>CypAspatDemModel.R</code>: stochastic, age-structured human demographic projection model
+### Cohort-based models
+- <code>base hippo & elephant model.R</code>: stochastic, age-structured demographic projection models for both species
 - <code>CypAspatDemModelMVPsim.R</code>: based on model above, vary founding population size to estimate change in probability of quasi-extinction
 - <code>CypAspatDemModelStaggeredEntry.R</code>: vary frequency and intervals of arrival of different group sizes (up to minimum viable population size calculated above) to determine minimum size of entering groups and frequency of immigration required to minimise quasi-extinction
 - <code>densities.R</code>: bootstrapped estimates of human densities across Europe/Near East during the Late Pleistocene
 
 ### Source functions
 - <code>matrixOperators.r</code>: functions for manipulating matrices for population projections
-- <code>qualityRating.R</code>: functions for estimating quality (reliability) of age estimates
-- <code>EndRating.R</code>: functions for estimating quality (reliability) of age estimates
 
 ## Data
 - <em>qx-Nicolaou.csv</em>: life-table estimates of age-specific survival for <em>Phanourios minor</em> from <a href="http://doi.org/10.1016/j.quaint.2020.09.016">Nicolaou et al.</a> (2020: <em>Quat Int</em> 568:55-64)
-
-### Demography
-- <em>world2013lifetable.csv</em>: human demographic data for age-structure determination (see <a href="http://doi.org/10.1038/s41559-019-0902-6">Bradshaw et al. 2019</a>)
-- <em>densities.csv</em>: estimates of human densities standardised to people km<sup>-2</sup> across Europe/Near East during the Late Pleistocene
 
 <p><a href="https://www.ucy.ac.cy"><img align="bottom-left" src="www/UCypruslogo.png" alt="UCyprus logo" height="45" style="margin-top: 20px"></a> &nbsp; <a href="http://www.dainst.org"><img align="bottom-left" src="www/DAIlogo.png" alt="DAI logo" height="55" style="margin-top: 20px"></a> &nbsp; &nbsp; <a href="https://www.flinders.edu.au"><img align="bottom-left" src="www/Flinders_University_Logo_Horizontal_RGB_Master.png" alt="Flinders University logo" height="35" style="margin-top: 20px"></a> &nbsp; <a href="https://globalecologyflinders.com"><img align="bottom-left" src="www/GEL Logo Kaurna New Transp-2.png" alt="GEL logo" height="55" style="margin-top: 20px"></a> &nbsp; &nbsp; <a href="https://EpicAustralia.org.au"><img align="bottom-left" src="www/CabahFCL.jpg" alt="CABAH logo" height="45" style="margin-top: 20px"></a> &nbsp; <a href="https://www.cut.ac.cy"><img align="bottom-left" src="www/CUTlogoblack.png" alt="CUT logo" height="50" style="margin-top: 20px"></a> &nbsp; <a href="https://www.moa.gov.cy/moa/gsd/gsd.nsf/dmlIndex_en/dmlIndex_en"><img align="bottom-left" src="www/CGSlogo.png" alt="CGS logo" height="45" style="margin-top: 20px"></a></p>
