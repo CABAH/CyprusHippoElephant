@@ -1,4 +1,4 @@
-# Demographic models predicting the effect of humans hunting now-extinct dwarf hippopotamus and dwarf elephant in Cyprus
+# Demographic models predicting the effect of humans hunting now-extinct dwarf hippopotamus🦛 and dwarf elephant🐘 in Cyprus🇨🇾
 <a href="https://www.ucy.ac.cy/migrate/"><img align="right" src="www/MIGRATElogo.jpg" width="200" style="margin-top: 20px"></a>
 
 Part of the <a href="https://www.ucy.ac.cy/migrate/">MIGRATE</a> (<strong>M</strong>odell<strong>i</strong>ng Demo<strong>gr</strong>aphy and <strong>A</strong>daptation in the Initial Peopling of the Eastern M<strong>e</strong>diterranean Islandscape) project, under the auspices of the European Union Research and Innovation Foundation for Research, Technological Development and Innovation "Restart 2016-2020".
@@ -19,7 +19,7 @@ Project <a href="https://www.ucy.ac.cy/migrate/">MIGRATE</a> seeks to offer nove
 ## Focal manuscript
 Bradshaw, CJA, F Saltré, S Herrando-Pérez, C Reepmeyer, T Moutsiou. Human arrival on Cyprus and the mechanisms of hunting native megafauna to extinction (in preparation)
 
-The code presented in this repository test how palaeolithic peoples could hunt dwarf hippopotamus (<em>Phanourios minor</em>) and dwarf elephants (<em>Palaeoloxodon cypriotes</em>) to extinction in the Late Pleistocene.
+The code presented in this repository test how palaeolithic peoples could hunt dwarf hippopotamus (<em>Phanourios minor</em>🦛) and dwarf elephants (<em>Palaeoloxodon cypriotes</em>🐘) to extinction in the Late Pleistocene.
 
 ## Scripts
 R code by Corey Bradshaw (<a href="http://github.com/cjabradshaw">@cjabradshaw</a>), Frédérik Saltré (<a href="http://github.com/fredsaltre">@fredsaltre</a>), and Salvador Herrando-Pérez
