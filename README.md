@@ -19,7 +19,7 @@ Project <a href="https://www.ucy.ac.cy/migrate/">MIGRATE</a> seeks to offer nove
 ## Focal manuscript
 Bradshaw, CJA, F Saltré, S Herrando-Pérez, C Reepmeyer, T Moutsiou. Human arrival on Cyprus and the mechanisms of hunting native megafauna to extinction (in preparation)
 
-The code presented in this repository test how palaeolithic peoples could hunt dwarf hippopotamus (<em>Phanourios minor</em> 🦛) and dwarf elephants (<em>Palaeoloxodon cypriotes</em> 🐘) to extinction in the Late Pleistocene.
+The code presented in this repository tests how palaeolithic peoples could have hunted dwarf hippopotamus (<em>Phanourios minor</em> 🦛) and dwarf elephants (<em>Palaeoloxodon cypriotes</em> 🐘) to extinction in the Late Pleistocene.
 
 ## Scripts
 R code by Corey Bradshaw (<a href="http://github.com/cjabradshaw">@cjabradshaw</a>), Frédérik Saltré (<a href="http://github.com/fredsaltre">@fredsaltre</a>), and Salvador Herrando-Pérez
