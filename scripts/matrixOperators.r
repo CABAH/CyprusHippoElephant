@@ -1,7 +1,7 @@
 # Matrix operators for population models
 # Corey J. A. Bradshaw
-# The University of Adelaide, Adelaide, Australia
-# corey.bradshaw@adelaide.edu.au
+# Flinders University, Adelaide, Australia
+# corey.bradshaw@flinders.edu.au
 # September 2014
 # place in R 'Resources/R/' folder
 
