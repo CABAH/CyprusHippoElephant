@@ -40,7 +40,7 @@ R code by Corey Bradshaw (<a href="http://github.com/cjabradshaw">@cjabradshaw</
 - <code>EndRating.R</code>: functions for estimating quality (reliability) of age estimates
 
 ## Data
-
+- <em>qx-Nicolaou.csv</em>: life-table estimates of age-specific survival for <em>Phanourios minor</em> from <a href="http://doi.org/10.1016/j.quaint.2020.09.016">Nicolaou et al.</a> (2020: <em>Quat Int</em> 568:55-64)
 
 ### Demography
 - <em>world2013lifetable.csv</em>: human demographic data for age-structure determination (see <a href="http://doi.org/10.1038/s41559-019-0902-6">Bradshaw et al. 2019</a>)
