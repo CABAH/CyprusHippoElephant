@@ -1073,7 +1073,3 @@ CV.cor
 CV.cor.se <- 100 *brt.fit$cv.statistics$correlation.se
 CV.cor.se
 print(c(CV.cor, CV.cor.se))
-
-  
-save.image("~/Documents/Papers/Palaeo/Cyprus/data/palaeo/pplExtGSA.RData")
-
