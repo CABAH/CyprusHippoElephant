@@ -28,6 +28,7 @@ R code by Corey Bradshaw (<a href="http://github.com/cjabradshaw">@cjabradshaw</
 - <code>base hippo & elephant model.R</code>: stochastic, age-structured demographic projection models for both megafauna species
 - <code>offtake hippo & elephant model.R</code>: stochastic models simulating incrementing offtake rates for both megafauna species (requires running 'base' models first)
 - <code>meat equivalents hippo & elephant model.R</code>: stochastic models simulating how incrementing population sizes of humans translates to loss of individuals of both megafauna species (requires running 'base' models first)
+- <code>dwarf hippo & elephant model gsa.R</code>: global sensitivity analysis using Latin hypercube sampling of stochastic, age-structured demographic projection models for both megafauna species
 
 ### Source functions
 - <code>matrixOperators.r</code>: functions for manipulating matrices for population projections
