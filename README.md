@@ -25,6 +25,7 @@ The code presented in this repository tests how palaeolithic peoples could have 
 R code by Corey Bradshaw (<a href="http://github.com/cjabradshaw">@cjabradshaw</a>), Frédérik Saltré (<a href="http://github.com/fredsaltre">@fredsaltre</a>), and Salvador Herrando-Pérez
 
 ### Cohort-based models
+- <code>dwarf hippo & elephant extinction dates.R</code>: estimates Signor-Lipps-corrected extinction window for both megafauna species
 - <code>base hippo & elephant model.R</code>: stochastic, age-structured demographic projection models for both megafauna species
 - <code>offtake hippo & elephant model.R</code>: stochastic models simulating incrementing offtake rates for both megafauna species (requires running 'base' models first)
 - <code>meat equivalents hippo & elephant model.R</code>: stochastic models simulating how incrementing population sizes of humans translates to loss of individuals of both megafauna species (requires running 'base' models first)
@@ -32,8 +33,12 @@ R code by Corey Bradshaw (<a href="http://github.com/cjabradshaw">@cjabradshaw</
 
 ### Source functions
 - <code>matrixOperators.r</code>: functions for manipulating matrices for population projections
+- <code>qualityRating.r</code>: applies quality rating to radiocarbon age estimates
+- <code>endRating.r</code>: chooses final quality rating for radiocarbon age estimates
 
 ## Data
+- <em>phanourios.text</em>: radiocarbon dates for <em>Phanourios minor</em> from <a href="http://doi.org/10.1371/journal.pone.0134429">Zazzo et al.</a> (2020: <em>PLoS One</em> 10:0134429)
+- <em>palaeoloxodon.text</em>: radiocarbon dates for <em>Palaeoloxodon cypriotes</em> from Wigand & Simmons (1999: The dating of Akortiri, <em>Aetokremnos</em> in <em>Faunal Extinction in an Island Society. Pygmy Hippopotamus Hunters of Cyprus</em>. A.H. Simmons (ed). Kluwer Academic Publishers, New York. pp. 193-215)
 - <em>qx-Nicolaou.csv</em>: life-table estimates of age-specific survival for <em>Phanourios minor</em> from <a href="http://doi.org/10.1016/j.quaint.2020.09.016">Nicolaou et al.</a> (2020: <em>Quat Int</em> 568:55-64)
 - <em>ssdHuman.csv</em>: stable-stage distribution of paleaolithic humans from <a href="http://doi.org/10.21203/rs.3.rs-3468157/v1">Bradshaw et al.</a> (2023: doi:10.21203/rs.3.rs-3468157/v1)
 <br>
