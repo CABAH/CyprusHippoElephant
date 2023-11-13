@@ -72,16 +72,6 @@ source("matrixOperators.r")
 # hippos: in the wild: males 6-13 yrs.; females 7-15 yrs https://ielc.libguides.com/sdzg/factsheets/hippopotamus/reproduction
 PM.mat.ratio <- mean(c(6,13))/mean(c(7,15))
 
-## range size
-# males
-PM.maleNterr <- 1.5*area
-
-# females
-PM.femNterrlo <- 0.4*area
-PM.femNterrup <- 0.5*area
-
-PM.maleNterr + mean(c(PM.femNterrlo, PM.femNterrup))
-
 ## growth functions
 ## PM hippos
 PM.f.age.vec <- c(0,PM.alpha,PM.age.max); PM.m.age.vec <- c(0,PM.alpha*PM.mat.ratio,PM.age.max)
@@ -150,12 +140,6 @@ lines(PC.age.vec,PC.grm,col="red")
 title(main="elephant")
 par(mfrow=c(1,1))
 PC.VB.out <- data.frame(0:PC.age.max,PC.grf,PC.grm)
-
-# tissue mass vs. total mass land mammals (Anderson et al. 1979 Scaling of supportive tissue mass
-# Quarterly Review of Biology 54(2): 139-148)
-# Mtiss <- 0.033*Mtot^1.090
-PC.tiss.m <- (0.033*((PC.grm*1000)^1.090))/1000
-PC.tiss.m.prop <- PC.tiss.m/PC.grm
 
 ## ungulate edible weights https://www.gov.nt.ca/sites/ecc/files/weights_of_wildlife.pdf
 edw.bgcaribou <- c(36.4,45,45.45,58.2,36,55,48,41,37,37,48,48,48,45,45,90,36,50,45,37,36,33,29)
@@ -284,8 +268,6 @@ relintake.pred <- ifelse(relintake.pred1 > 1, 1, relintake.pred1)
 lines(relintake.age.vec.cont, relintake.pred,lty=2,lwd=3,col="red")
 
 relintake.out <- data.frame(relintake.age.vec.cont,relintake.pred)
-setwd("/Users/brad0317/Documents/Papers/Palaeo/Cyprus/data/palaeo")
-write.table(relintake.out, "relintake.csv", sep=",", row.names = F)
 
 
 ##################################################################################
@@ -322,11 +304,88 @@ relmeatpyr.age.m <- mkgmeatpyr.m*relintake.full.prop
 relintakeMeat.out <- data.frame(relmeatpyr.age.f,relmeatpyr.age.m)
 
 ## prey selection
-# energy / total handling time; Lupo, & Schmitt J Anthropol Archaeol 2016 44:185–197
-PC.return <- 416000/3588 # buffalo (~ pygmy elephant)
-PM.return <- 76050/588 # hartebeest (~ pygmy hippo)
-PM.prob1 <- 1/(PM.return/PC.return)
-PM.prob2 <- 1/(3926/3010) # post-encounter return rate boar vs. equus (10.1038/s41598-023-31085-x)
+# energetic payoff (e) (equations from Yaworsky et al. 2023-Sci Rep)
+PM.e.md <- 43551.8 + PM.mass*546.5
+PM.e.lo <- 43551.8-(1.96*1856.3) + PM.mass*(546.5-(1.96*15.6))
+PM.e.up <- 43551.8+(1.96*1856.3) + PM.mass*(546.5+(1.96*15.6))
+PM.e.sd <- mean(1/1.96*(PM.e.up-PM.e.md), 1/1.96*(PM.e.md-PM.e.lo))
+
+PC.e.md <- 43551.8 + PC.mass*546.5
+PC.e.lo <- 43551.8-(1.96*1856.3) + PC.mass*(546.5-(1.96*15.6))
+PC.e.up <- 43551.8+(1.96*1856.3) + PC.mass*(546.5+(1.96*15.6))
+PC.e.sd <- mean(1/1.96*(PC.e.up-PC.e.md), 1/1.96*(PC.e.md-PC.e.lo))
+
+# pre-acquisition handling costs (c) (equations from Yaworsky et al. 2023-Sci Rep)
+PM.c.md <- 514.1590 + PM.mass*0.6252
+PM.c.lo <- 514.1590-(1.96*393.8621) + PM.mass*(0.6252-(1.96*0.3309))
+PM.c.up <- 514.1590+(1.96*393.8621) + PM.mass*(0.6252+(1.96*0.3309))
+PM.c.lo <- ifelse(PM.c.lo < 0, 0, PM.c.lo)
+PM.c.sd <- mean(1/1.96*(PM.c.up-PM.c.md), 1/1.96*(PM.c.md-PM.c.lo))
+
+PC.c.md <- 514.1590 + PC.mass*0.6252
+PC.c.lo <- 514.1590-(1.96*393.8621) + PC.mass*(0.6252-(1.96*0.3309))
+PC.c.up <- 514.1590+(1.96*393.8621) + PC.mass*(0.6252+(1.96*0.3309))
+PC.c.lo <- ifelse(PC.c.lo < 0, 0, PC.c.lo)
+PC.c.sd <- mean(1/1.96*(PC.c.up-PC.c.md), 1/1.96*(PC.c.md-PC.c.lo))
+
+# post-acquisition handling costs (h) (equations from Yaworsky et al. 2023-Sci Rep)
+PM.h.md <- -897.6988 + PM.mass*10.5013
+PM.h.lo <- -897.6988-(1.96*297.4462) + PM.mass*(10.5013-(1.96*0.2499))
+PM.h.up <- -897.6988+(1.96*297.4462) + PM.mass*(10.5013+(1.96*0.2499))
+PM.h.lo <- ifelse(PM.h.lo < 0, 0, PM.h.lo)
+PM.h.sd <- mean(1/1.96*(PM.h.up-PM.h.md), 1/1.96*(PM.h.md-PM.h.lo))
+
+PC.h.md <- -897.6988 + PC.mass*10.5013
+PC.h.lo <- -897.6988-(1.96*297.4462) + PC.mass*(10.5013-(1.96*0.2499))
+PC.h.up <- -897.6988+(1.96*297.4462) + PC.mass*(10.5013+(1.96*0.2499))
+PC.h.lo <- ifelse(PC.h.lo < 0, 0, PC.h.lo)
+PC.h.sd <- mean(1/1.96*(PC.h.up-PC.h.md), 1/1.96*(PC.h.md-PC.h.lo))
+
+# proportion failed pursuits (p) (equations from Yaworsky et al. 2023-Sci Rep)
+PM.p.md <- 0.1753815 + PM.mass*0.0002839
+PM.p.lo <- 0.1753815-(1.96*0.2221416) + PC.mass*(0.0002839-(1.96*0.0002211))
+PM.p.up <- 0.1753815+(1.96*0.2221416) + PC.mass*(0.0002839+(1.96*0.0002211))
+PM.p.lo <- ifelse(PM.p.lo < 0, 0, PM.p.lo)
+PM.p.sd <- mean(1/1.96*(PM.p.up-PM.p.md), 1/1.96*(PM.p.md-PM.p.lo))
+
+PC.p.md <- 0.1753815 + PC.mass*0.0002839
+PC.p.lo <- 0.1753815-(1.96*0.2221416) + PC.mass*(0.0002839-(1.96*0.0002211))
+PC.p.up <- 0.1753815+(1.96*0.2221416) + PC.mass*(0.0002839+(1.96*0.0002211))
+PC.p.lo <- ifelse(PC.p.lo < 0, 0, PC.p.lo)
+PC.p.sd <- mean(1/1.96*(PC.p.up-PC.p.md), 1/1.96*(PC.p.md-PC.p.lo))
+
+# post-encounter return rate (π) (equations from Yaworsky et al. 2023-Sci Rep)
+PM.pi.md <- ((PM.e.md*(1-PM.p.md))/(((1-PM.p.md)*PM.h.md)+PM.c.md))*60
+PC.pi.md <- ((PC.e.md*(1-PC.p.md))/(((1-PC.p.md)*PC.h.md)+PC.c.md))*60
+
+perriter <- 100000
+PM.prob.vec <- choice.vec <- rep(NA,perriter)
+for (p in 1:perriter) {
+  PM.e.it <- rtruncnorm(1, a=0, b=Inf, mean=PM.e.md, sd=PM.e.sd)
+    PM.p.alpha <- estBetaParams(PM.p.md, PM.p.sd^2)$alpha
+    PM.p.beta <- estBetaParams(PM.p.md, PM.p.sd^2)$beta
+  PM.p.it <- rbeta(1, PM.p.alpha, PM.p.beta)
+  PM.h.it <- rtruncnorm(1, a=0, b=Inf, mean=PM.h.md, sd=PM.h.sd)
+  PM.c.it <- rtruncnorm(1, a=0, b=Inf, mean=PM.c.md, sd=PM.c.sd)
+  
+  PM.pi.it <- ((PM.e.it*(1-PM.p.it))/(((1-PM.p.it)*PM.h.it)+PM.c.it))*60
+  PM.pi.it <- ifelse(PM.pi.it == 0, NA, PM.pi.it)
+  
+  PC.e.it <- rtruncnorm(1, a=0, b=Inf, mean=PC.e.md, sd=PC.e.sd)
+  PC.p.alpha <- estBetaParams(PC.p.md, PC.p.sd^2)$alpha
+  PC.p.beta <- estBetaParams(PC.p.md, PC.p.sd^2)$beta
+  PC.p.it <- rbeta(1, PC.p.alpha, PC.p.beta)
+  PC.h.it <- rtruncnorm(1, a=0, b=Inf, mean=PC.h.md, sd=PC.h.sd)
+  PC.c.it <- rtruncnorm(1, a=0, b=Inf, mean=PC.c.md, sd=PC.c.sd)
+  
+  PC.pi.it <- ((PC.e.it*(1-PC.p.it))/(((1-PC.p.it)*PC.h.it)+PC.c.it))*60
+  PC.pi.it <- ifelse(PC.pi.it == 0, NA, PC.pi.it)
+
+  choice.vec[p] <- ifelse(PM.pi.it > PC.pi.it, 1, 0)
+}
+
+PM.prob3 <- as.vector(sum(choice.vec, na.rm=T)/length(which(is.na(choice.vec)==F)))
+PM.prob3.sd <- 0.05*PM.prob3
 
 PM.Q.ext.pr <- PC.Q.ext.pr <- PM.yrsRem.md <- PM.yrsRem.up <- PM.yrsRem.lo <- 
   PC.yrsRem.md <- PC.yrsRem.up <- PC.yrsRem.lo <- rep(NA,length(people.vec))
@@ -402,11 +461,11 @@ for (k in 1:length(people.vec)) {
       totmeatpyr <- sum(meatpyr.f + meatpyr.m)
       
       # equivalent meat in PC and PM (if only source of meat)
-      PM.prob2.alpha <- estBetaParams(PM.prob2, (0.05*PM.prob2)^2)$alpha
-      PM.prob2.beta <- estBetaParams(PM.prob2, (0.05*PM.prob2)^2)$beta
-      PM.prob2.stoch <- rbeta(length(PM.prob2.alpha), PM.prob2.alpha, PM.prob2.beta)
+      PM.prob3.alpha <- estBetaParams(PM.prob3, (0.05*PM.prob3)^2)$alpha
+      PM.prob3.beta <- estBetaParams(PM.prob3, (0.05*PM.prob3)^2)$beta
+      PM.prob3.stoch <- rbeta(length(PM.prob3.alpha), PM.prob3.alpha, PM.prob3.beta)
       
-      PM.meat.tot <- PM.prob2.stoch*totmeatpyr
+      PM.meat.tot <- PM.prob3.stoch*totmeatpyr
       PC.meat.tot <- totmeatpyr - PM.meat.tot
       
       PM.meat.f <- PM.prob2.stoch*sum(meatpyr.f)
@@ -464,9 +523,21 @@ for (k in 1:length(people.vec)) {
       PCm.wtXage <- 0.5*(PC.totm.wt)*PCwtvecmwt
       PCm.NxAge <- as.vector(round(PCm.wtXage/PC.grm, 0))
       
-      # REMOVALS FROM n MAT
+     # if not enough PM meat to remove relative to size of extant PM population,
+      # transfer meat equivalent to PC population
+      PCf.NxAgeADD <- rep(0,length(PCwtvecfwt))
+      if ((sum(PM.n.mat[,i+1]) - sum(PMf.NxAge)) < 0) {
+        PMfn2twt <- sum(PMf.NxAge*PM.grf) # transform extra female PMs to total female weight
+        PMfn2twtCor <- PMfn2twt*(1-PC.meat.oth.t) # correct for meat 'other' proportion
+        PCf.wtXageADD <- (PMfn2twtCor)*PCwtvecfwt # weight by PC age
+        PCf.NxAgeADD <- as.vector(round(PCf.wtXageADD/PC.grf, 0)) # n PC by age
+       }
+      
+      # REMOVALS FROM n MAT - PM
       PM.n.mat[,i+1] <- ifelse((PM.n.mat[,i+1] - PMf.NxAge) < 0, 0, (PM.n.mat[,i+1] - PMf.NxAge))
-      PC.n.mat[,i+1] <- ifelse((PC.n.mat[,i+1] - PCf.NxAge) < 0, 0, (PC.n.mat[,i+1] - PCf.NxAge))
+      
+      # REMOVALS FROM n MAT - PC
+      PC.n.mat[,i+1] <- ifelse((PC.n.mat[,i+1] - (PCf.NxAge+PCf.NxAgeADD)) < 0, 0, (PC.n.mat[,i+1] - (PCf.NxAge+PCf.NxAgeADD)))
       
       # animals removed
       PM.n.rem[,i+1] <- ifelse(PM.n.mat[,i+1] == 0, 0, PMf.NxAge)
