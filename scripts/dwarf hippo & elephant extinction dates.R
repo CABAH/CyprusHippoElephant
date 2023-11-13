@@ -42,8 +42,8 @@ write.table(phanouriosTS, file = "phanouriosTS.txt", row.names = FALSE, col.name
 criwm(chrono_data = "phanouriosTS.txt", signor_lipps = "ext", biased=T, radiocarbon="all", cal_curve = "intcal20", cal_save=T, criwm_save = T)
 
 
-# dwarf elephant Palaeoloxodon cypriotes (from Wigand and Simmons 1999. The dating of Akortiri Aetokremnos in
-# Faunal Extinction in an Island Society. Pygmy Hippopotamus Hunters of Cyprus. A.H. Simmons (ed). 
+# dwarf elephant Palaeoloxodon cypriotes (from Wigand and Simmons 1999. The dating of Akrotiri <em>Aetokremnos</em>, in
+# <em>Faunal Extinction in an Island Society. Pygmy Hippopotamus Hunters of Cyprus</em>. A.H. Simmons (ed). 
 # Kluwer Academic Publishers, New York. pp. 193-215)
 palaeoloxodon <- read.table("palaeoloxodon.txt", header = T, sep="\t")
 palaeoloxodon[is.na(palaeoloxodon)] <- 'na' #replaces all the missing data with "na"to avoid TRUE/FALSE errors
