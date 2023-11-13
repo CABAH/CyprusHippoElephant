@@ -38,7 +38,7 @@ R code by Corey Bradshaw (<a href="http://github.com/cjabradshaw">@cjabradshaw</
 
 ## Data
 - <em>phanourios.txt</em>: radiocarbon dates for <em>Phanourios minor</em> from <a href="http://doi.org/10.1371/journal.pone.0134429">Zazzo et al.</a> (2020: <em>PLoS One</em> 10:0134429)
-- <em>palaeoloxodon.txt</em>: radiocarbon dates for <em>Palaeoloxodon cypriotes</em> from Wigand & Simmons (1999: The dating of Akortiri, <em>Aetokremnos</em> in <em>Faunal Extinction in an Island Society. Pygmy Hippopotamus Hunters of Cyprus</em>. A.H. Simmons (ed). Kluwer Academic Publishers, New York. pp. 193-215)
+- <em>palaeoloxodon.txt</em>: radiocarbon dates for <em>Palaeoloxodon cypriotes</em> from Wigand & Simmons (1999: The dating of Akrotiri <em>Aetokremnos</em>, in <em>Faunal Extinction in an Island Society. Pygmy Hippopotamus Hunters of Cyprus</em>. A.H. Simmons (ed). Kluwer Academic Publishers, New York. pp. 193-215)
 - <em>qx-Nicolaou.csv</em>: life-table estimates of age-specific survival for <em>Phanourios minor</em> from <a href="http://doi.org/10.1016/j.quaint.2020.09.016">Nicolaou et al.</a> (2020: <em>Quat Int</em> 568:55-64)
 - <em>ssdHuman.csv</em>: stable-stage distribution of paleaolithic humans from <a href="http://doi.org/10.21203/rs.3.rs-3468157/v1">Bradshaw et al.</a> (2023: doi:10.21203/rs.3.rs-3468157/v1)
 <br>
