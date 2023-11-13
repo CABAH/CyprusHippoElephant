@@ -1043,33 +1043,33 @@ sum(is.na(dat$PC.Qext.pr))
 ## PM
 dat.nona <- data.frame(na.omit(dat[!is.infinite(rowSums(dat)),]))
 dim(dat.nona)[1]
-brt.fit <- gbm.step(dat.nona, gbm.x = attr(dat.nona, "names")[1:10], gbm.y = attr(dat.nona, "names")[12], family="gaussian", max.trees=100000, tolerance = 0.0001, learning.rate = 0.008, bag.fraction=0.75, tree.complexity = 2)
-summary(brt.fit)
+brt.fitPM <- gbm.step(dat.nona, gbm.x = attr(dat.nona, "names")[1:10], gbm.y = attr(dat.nona, "names")[12], family="gaussian", max.trees=100000, tolerance = 0.0001, learning.rate = 0.005, bag.fraction=0.75, tree.complexity = 2)
+summary(brt.fitPM)
 dim(dat.nona)[1]
-D2 <- 100 * (brt.fit$cv.statistics$deviance.mean - brt.fit$self.statistics$mean.resid) / brt.fit$cv.statistics$deviance.mean
+D2 <- 100 * (brt.fitPM$cv.statistics$deviance.mean - brt.fitPM$self.statistics$mean.resid) / brt.fitPM$cv.statistics$deviance.mean
 D2 # % deviance explained
-gbm.plot(brt.fit)
-gbm.plot.fits(brt.fit)
+gbm.plot(brt.fitPM)
+gbm.plot.fits(brt.fitPM)
 
-CV.cor <- 100 * brt.fit$cv.statistics$correlation.mean
-CV.cor
-CV.cor.se <- 100 *brt.fit$cv.statistics$correlation.se
-CV.cor.se
-print(c(CV.cor, CV.cor.se))
+CV.corPM <- 100 * brt.fitPM$cv.statistics$correlation.mean
+CV.corPM
+CV.cor.sePM <- 100 *brt.fitPM$cv.statistics$correlation.se
+CV.cor.sePM
+print(c(CV.corPM, CV.cor.sePM))
 
 ## PC
 dat.nona <- data.frame(na.omit(dat[!is.infinite(rowSums(dat)),]))
 dim(dat.nona)[1]
-brt.fit <- gbm.step(dat.nona, gbm.x = attr(dat.nona, "names")[1:10], gbm.y = attr(dat.nona, "names")[13], family="gaussian", max.trees=100000, tolerance = 0.0001, learning.rate = 0.008, bag.fraction=0.75, tree.complexity = 2)
-summary(brt.fit)
+brt.fitPC <- gbm.step(dat.nona, gbm.x = attr(dat.nona, "names")[1:10], gbm.y = attr(dat.nona, "names")[13], family="gaussian", max.trees=100000, tolerance = 0.0001, learning.rate = 0.005, bag.fraction=0.75, tree.complexity = 2)
+summary(brt.fitPC)
 dim(dat.nona)[1]
-D2 <- 100 * (brt.fit$cv.statistics$deviance.mean - brt.fit$self.statistics$mean.resid) / brt.fit$cv.statistics$deviance.mean
+D2 <- 100 * (brt.fitPC$cv.statistics$deviance.mean - brt.fitPC$self.statistics$mean.resid) / brt.fitPC$cv.statistics$deviance.mean
 D2 # % deviance explained
-gbm.plot(brt.fit)
-gbm.plot.fits(brt.fit)
+gbm.plot(brt.fitPC)
+gbm.plot.fits(brt.fitPC)
 
-CV.cor <- 100 * brt.fit$cv.statistics$correlation.mean
-CV.cor
-CV.cor.se <- 100 *brt.fit$cv.statistics$correlation.se
-CV.cor.se
-print(c(CV.cor, CV.cor.se))
+CV.corPC <- 100 * brt.fitPC$cv.statistics$correlation.mean
+CV.corPC
+CV.cor.sePC <- 100 *brt.fitPC$cv.statistics$correlation.se
+CV.cor.sePC
+print(c(CV.corPC, CV.cor.sePC))
