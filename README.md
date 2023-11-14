@@ -43,7 +43,19 @@ R code by Corey Bradshaw (<a href="http://github.com/cjabradshaw">@cjabradshaw</
 - <em>ssdHuman.csv</em>: stable-stage distribution of paleaolithic humans from <a href="http://doi.org/10.21203/rs.3.rs-3468157/v1">Bradshaw et al.</a> (2023: doi:10.21203/rs.3.rs-3468157/v1)
 
 ## R libraries
-- <code>Rexinct</code>: install via Github – <code>devtools::install_github("FredSaltre/CRIWM/Rextinct")</code> (note: library has a typo ('Rexinct', not 'Rextinct'), so you need to call <code>library(Rexinct)</code> until it is rectified
+- <code>Rexinct</code>: install via Github – <code>devtools::install_github("FredSaltre/CRIWM/Rextinct")</code>. Note: library has a typo ('Rexinct', not 'Rextinct'), so you need to call <code>library(Rexinct)</code> until it is rectified
+- <code>dplyr</code>
+- <code>plotly</code>
+- <code>ggpubr</code>
+- <code>truncnorm</code>
+- <code>doSNOW</code>
+- <code>iterators</code>
+- <code>snow</code>
+- <code>foreach</code>
+- <code>lhs</code>
+- <code>data.table</code>
+- <code>dismo</code>
+- <code>gbm</code>
 <br>
 
 <p><a href="https://www.ucy.ac.cy"><img align="bottom-left" src="www/UCypruslogo.png" alt="UCyprus logo" height="40" style="margin-top: 20px"></a> &nbsp; <a href="http://www.dainst.org"><img align="bottom-left" src="www/DAIlogo.png" alt="DAI logo" height="55" style="margin-top: 20px"></a> &nbsp; &nbsp; <a href="https://www.flinders.edu.au"><img align="bottom-left" src="www/Flinders_University_Logo_Horizontal_RGB_Master.png" alt="Flinders University logo" height="30" style="margin-top: 20px"></a> &nbsp; <a href="https://globalecologyflinders.com"><img align="bottom-left" src="www/GEL Logo Kaurna New Transp-2.png" alt="GEL logo" height="55" style="margin-top: 20px"></a> &nbsp; &nbsp; <a href="https://EpicAustralia.org.au"><img align="bottom-left" src="www/CabahFCL.jpg" alt="CABAH logo" height="40" style="margin-top: 20px"></a> &nbsp; <a href="https://www.mncn.csic.es"><img align="bottom-left" src="www/CSIClogo.png" alt="Spanish National Research Council logo" height="50" style="margin-top: 20px"></a> &nbsp; <a href="https://www.cut.ac.cy"><img align="bottom-left" src="www/CUTlogoblack.png" alt="CUT logo" height="50" style="margin-top: 20px"></a><a href="https://www.moa.gov.cy/moa/gsd/gsd.nsf/dmlIndex_en/dmlIndex_en"><img align="bottom-left" src="www/CGSlogo.png" alt="CGS logo" height="45" style="margin-top: 20px"></a></p>
