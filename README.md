@@ -43,7 +43,7 @@ R code by Corey Bradshaw (<a href="http://github.com/cjabradshaw">@cjabradshaw</
 - <em>ssdHuman.csv</em>: stable-stage distribution of paleaolithic humans from <a href="http://doi.org/10.21203/rs.3.rs-3468157/v1">Bradshaw et al.</a> (2023: doi:10.21203/rs.3.rs-3468157/v1)
 
 ## R libraries
-- <code>Rexinct</code>: install via Github – <code>devtools::install_github("FredSaltre/CRIWM/Rextinct")</code>. Note: library has a typo ('Rexinct', not 'Rextinct'), so you need to call <code>library(Rexinct)</code> until it is rectified
+- <code>Rexinct</code>: install via Github – <code>devtools::install_github("FredSaltre/CRIWM/Rextinct")</code>. Note: library name has a typo (i.e., 'Rexinct', not 'Rextinct'), so you need to call <code>library(Rexinct)</code> until it is rectified
 - <code>dplyr</code>
 - <code>plotly</code>
 - <code>ggpubr</code>
