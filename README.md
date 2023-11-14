@@ -17,7 +17,7 @@ Project <a href="https://www.ucy.ac.cy/migrate/">MIGRATE</a> seeks to offer nove
 - Moutsiou T, C Reepmeyer, V Kassianidou, Z Zomeni, A Agapiou A. 2021. <a href="http://doi.org/10.1371/journal.pone.0258370">Modelling the Pleistocene colonisation of Eastern Mediterranean islandscapes</a>. <em><strong>PLoS One</strong></em> 16:e0258370
 
 ## Focal manuscript
-Bradshaw, CJA, F Saltré, S Herrando-Pérez, C Reepmeyer, T Moutsiou. Human arrival on Cyprus and the mechanisms of hunting native megafauna to extinction (in preparation)
+Bradshaw, CJA, F Saltré, S Herrando-Pérez, C Reepmeyer, T Moutsiou. Palaeolithic human populationson Cyprus and the mechanisms of hunting native megafauna to extinction (in preparation)
 
 The code presented in this repository tests how palaeolithic peoples could have hunted dwarf hippopotamus (<em>Phanourios minor</em> 🦛) and dwarf elephants (<em>Palaeoloxodon cypriotes</em> 🐘) to extinction in the Late Pleistocene.
 
