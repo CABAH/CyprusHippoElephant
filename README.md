@@ -21,7 +21,7 @@ Bradshaw, CJA, F Saltré, S Herrando-Pérez, C Reepmeyer, T Moutsiou. Human arri
 
 The code presented in this repository tests how palaeolithic peoples could have hunted dwarf hippopotamus (<em>Phanourios minor</em> 🦛) and dwarf elephants (<em>Palaeoloxodon cypriotes</em> 🐘) to extinction in the Late Pleistocene.
 
-## Scripts
+## <a href="https://github.com/cjabradshaw/CyprusHippoElephant/tree/main/scripts">Scripts</a>
 R code by Corey Bradshaw (<a href="http://github.com/cjabradshaw">@cjabradshaw</a>), Frédérik Saltré (<a href="http://github.com/fredsaltre">@fredsaltre</a>), and Salvador Herrando-Pérez
 
 ### Cohort-based models
@@ -36,7 +36,7 @@ R code by Corey Bradshaw (<a href="http://github.com/cjabradshaw">@cjabradshaw</
 - <code>qualityRating.r</code>: applies quality rating to radiocarbon age estimates
 - <code>endRating.r</code>: chooses final quality rating for radiocarbon age estimates
 
-## Data
+## <a href="https://github.com/cjabradshaw/CyprusHippoElephant/tree/main/data">Data</a>
 - <em>phanourios.txt</em>: radiocarbon dates for <em>Phanourios minor</em> from <a href="http://doi.org/10.1371/journal.pone.0134429">Zazzo et al.</a> (2020: <em>PLoS One</em> 10:0134429)
 - <em>palaeoloxodon.txt</em>: radiocarbon dates for <em>Palaeoloxodon cypriotes</em> from Wigand, PE & Simmons, AH (1999: The dating of Akrotiri <em>Aetokremnos</em>, in <a href="https://link.springer.com/book/10.1007/b109876"><em>Faunal Extinction in an Island Society. Pygmy Hippopotamus Hunters of Cyprus</em></a>. AH Simmons (ed). Kluwer Academic Publishers, New York. pp. 193-215)
 - <em>qx-Nicolaou.csv</em>: life-table estimates of age-specific survival for <em>Phanourios minor</em> from <a href="http://doi.org/10.1016/j.quaint.2020.09.016">Nicolaou et al.</a> (2020: <em>Quat Int</em> 568:55-64)
