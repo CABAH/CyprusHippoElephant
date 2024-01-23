@@ -6,7 +6,7 @@ Part of the <a href="https://www.ucy.ac.cy/migrate/">MIGRATE</a> (<strong>M</str
 <br>
 <strong>lead investigator</strong>: Dr <a href="https://ucy.academia.edu/TheodoraMoutsiou">Theodora Moutsiou</a><br>
 <strong>key personnel</strong>: Dr <a href="https://scholar.google.com.au/citations?user=BU25ogMAAAAJ&hl=en">Christian Reepmeyer</a>, Associate Professor <a href="https://www.ucy.ac.cy/directory/en/profile/demest">Stella Demesticha</a>, Dr <a href="https://www.ucy.ac.cy/directory/en/profile/arkasian">Vasiliki Kassianidou</a>, Dr <a href="https://www.cut.ac.cy/faculties/fet/ceg/staff/athos.agapiou/?languageId=1">Athos Agapiou</a>, Dr <a href="https://www.researchgate.net/profile/Zomenia-Zomeni">Zomenia Zomeni</a>, Professor <a href="https://globalecologyflinders.com/people/#DIRECTOR">Corey Bradshaw</a><br>
-<strong>collaborators</strong>: Dr <a href="https://globalecologyflinders.com/people/#COORDINATOR">Frédérik Saltré</a>, Dr <a href="https://scholar.google.com.au/citations?user=-BSGg1MAAAAJ&hl=en">Salvador Herrando-Pérez</a>
+<strong>collaborators</strong>: Dr <a href="https://globalecologyflinders.com/people/#COORDINATOR">Frédérik Saltré</a>, Dr <a href="https://qcnr.usu.edu/directory/envs/faculty/crabtree-stefani">Stefani Crabtree</a>
 <br>
 ## Project overview
 Project <a href="https://www.ucy.ac.cy/migrate/">MIGRATE</a> seeks to offer novel insights into population dynamics and range shifts that resulted in dispersals from the Eastern Mediterranean mainland to the island of <a href="https://www.google.com/maps/place/Cyprus/@35.1670135,32.765821,9z/">Cyprus</a> at a critical period (Late Pleistocene, 45-12 ka) through stochastic spatial modelling. This advanced modelling will  enhance our understanding of timing, and climatic and social factors important in the initial colonisation of Cyprus. The proposed project aims to establish new research domains in the field of Cypriot archaeology extending traditional chronological frontiers beyond the Holocene (current Warm Period), encompassing innovative and interdisciplinary methodologies at the forefront of archaeological research.
@@ -17,7 +17,7 @@ Project <a href="https://www.ucy.ac.cy/migrate/">MIGRATE</a> seeks to offer nove
 - Moutsiou T, C Reepmeyer, V Kassianidou, Z Zomeni, A Agapiou A. 2021. <a href="http://doi.org/10.1371/journal.pone.0258370">Modelling the Pleistocene colonisation of Eastern Mediterranean islandscapes</a>. <em><strong>PLoS One</strong></em> 16:e0258370
 
 ## Focal manuscript
-Bradshaw, CJA, F Saltré, C Reepmeyer, T Moutsiou. <a href="http://doi.org/">Mechanisms of hunting native megafauna to extinction by Palaeolithic humans on Cyprus</a>. <em>Research Square</em> doi: (in review elsewhere)
+Bradshaw, CJA, F Saltré, SA Crabtree, C Reepmeyer, T Moutsiou. <a href="http://doi.org/">Mechanisms of hunting native megafauna to extinction by Palaeolithic humans on Cyprus</a>. <em>Research Square</em> doi: (in review elsewhere)
 
 The code presented in this repository tests how palaeolithic peoples could have hunted dwarf hippopotamus (<em>Phanourios minor</em> 🦛) and dwarf elephants (<em>Palaeoloxodon cypriotes</em> 🐘) to extinction in the Late Pleistocene.
 
