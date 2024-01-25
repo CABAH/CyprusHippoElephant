@@ -50,7 +50,7 @@ R code by Corey Bradshaw (<a href="http://github.com/cjabradshaw">@cjabradshaw</
 - <em>ssdHuman.csv</em>: stable-stage distribution of paleaolithic humans 🧑‍🤝‍🧑 from <a href="http://doi.org/10.21203/rs.3.rs-3468157/v1">Bradshaw et al.</a> (2023: doi:10.21203/rs.3.rs-3468157/v1)
 
 ## R libraries
-- <a href="https://github.com/FredSaltre/CRIWM/"><code>Rexinct</code></a> (approach described in this <a href="https://doi.org/10.1016/j.quageo.2023.101489">paper</a>): install via Github – <code>devtools::install_github("FredSaltre/CRIWM/Rextinct")</code>
+- <a href="https://github.com/FredSaltre/CRIWM/"><code>Rextinct</code></a> (approach described in this <a href="https://doi.org/10.1016/j.quageo.2023.101489">paper</a>): install via Github – <code>devtools::install_github("FredSaltre/CRIWM/Rextinct")</code>
 - <code>dplyr</code>, <code>plotly</code>, <code>ggpubr</code>, <code>truncnorm</code>, <code>doSNOW</code>, <code>iterators</code>, <code>snow</code>, <code>foreach</code>, <code>lhs</code>, <code>data.table</code>, <code>dismo</code>, <code>gbm</code>
 
 ### Acknowledgements
