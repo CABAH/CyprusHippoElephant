@@ -1,4 +1,4 @@
-![image](https://github.com/cjabradshaw/CyprusHippoElephant/assets/26937238/72045390-b7cc-4002-8d96-bfdd2340c102)# Demographic models predicting the effect of human hunting on now-extinct dwarf hippopotamus 🦛 and dwarf elephant 🐘 in Cyprus 🇨🇾
+# Demographic models predicting the effect of human hunting on now-extinct dwarf hippopotamus 🦛 and dwarf elephant 🐘 in Cyprus 🇨🇾
 <a href="https://www.ucy.ac.cy/migrate/"><img align="right" src="www/MigratelogoShad.png" width="200" style="margin-top: 20px"></a>
 <a href="https://zenodo.org/doi/10.5281/zenodo.10561469"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.10561469.svg" alt="DOI"></a>
 
