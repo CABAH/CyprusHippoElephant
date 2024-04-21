@@ -49,9 +49,9 @@ R code by Corey Bradshaw (<a href="http://github.com/cjabradshaw">@cjabradshaw</
 - <em>qx-Nicolaou.csv</em>: life-table estimates of age-specific survival for <em>Phanourios minor</em> 🦛 from <a href="http://doi.org/10.1016/j.quaint.2020.09.016">Nicolaou et al.</a> (2020: <em>Quat Int</em> 568:55-64)
 - <em>ssdHuman.csv</em>: stable-stage distribution of paleaolithic humans 🧑‍🤝‍🧑 from <a href="http://doi.org/10.21203/rs.3.rs-3468157/v1">Bradshaw et al.</a> (2023: doi:10.21203/rs.3.rs-3468157/v1)
 
-## R libraries
+## R (v4.3.2) libraries
 - <a href="https://github.com/FredSaltre/CRIWM/"><code>Rextinct</code></a> (approach described in this <a href="https://doi.org/10.1016/j.quageo.2023.101489">paper</a>): install via Github – <code>devtools::install_github("FredSaltre/CRIWM/Rextinct")</code>
-- <code>dplyr</code>, <code>plotly</code>, <code>ggpubr</code>, <code>truncnorm</code>, <code>doSNOW</code>, <code>iterators</code>, <code>snow</code>, <code>foreach</code>, <code>lhs</code>, <code>data.table</code>, <code>dismo</code>, <code>gbm</code>
+- <code>dplyr</code> (v1.1.4), <code>plotly</code> (v4.10.4), <code>ggpubr</code> (v0.6.0), <code>truncnorm</code> (v1.0-9), <code>doSNOW</code> (v1.0.20), <code>iterators</code> (v1.0.14), <code>snow</code> (v0.4-4), <code>foreach</code> (v1.5.2), <code>lhs</code> (v1.1.6), <code>data.table</code> (v1.15.4), <code>dismo</code> (v1.3-14), <code>gbm</code> (v2.1.9)
 
 ### Acknowledgements
 Co-financed by the <a href="https://ec.europa.eu/regional_policy/funding/erdf_en">European Regional Development Fund</a> and the Republic of Cyprus through the <a href="https://www.research.org.cy/en/">Research and Innovation Foundation</a> (EXCELLENCE/0421/0050) for the project <a href="https://www.ucy.ac.cy/migrate/">Modelling Demography and Adaptation in the Initial Peopling of the Eastern Mediterranean Islandscape</a> (MIGRATE, 2022-2024). Funding provided to CJAB and FS by the <a href="https://www.arc.gov.au">Australian Research Council</a> <a href="https://EpicAustralia.org.au">Centre of Excellence for Australian Biodiversity and Heritage</a> (CE170100015). Χάρη και στα θρυλικά λουκάνικα της Λυσού.
