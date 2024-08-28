@@ -18,7 +18,7 @@ Project <a href="https://www.ucy.ac.cy/migrate/">MIGRATE</a> seeks to offer nove
 - Moutsiou T, C Reepmeyer, V Kassianidou, Z Zomeni, A Agapiou A. 2021. <a href="http://doi.org/10.1371/journal.pone.0258370">Modelling the Pleistocene colonisation of Eastern Mediterranean islandscapes</a>. <em><strong>PLoS One</strong></em> 16:e0258370
 
 ## Focal manuscript
-Bradshaw, CJA, F Saltré, SA Crabtree, C Reepmeyer, T Moutsiou. <a href="http://doi.org/10.1098/rspb.2024.0967">Small populations of palaeolithic humans in Cyprus hunted endemic megafauna to extinction</a>. <em>Proceedings of the Royal Society B</em> doi:10.1098/rspb.2024.0967<br>
+Bradshaw, CJA, F Saltré, SA Crabtree, C Reepmeyer, T Moutsiou. <a href="http://doi.org/10.1098/rspb.2024.0967">Small populations of palaeolithic humans in Cyprus hunted endemic megafauna to extinction</a>. <em>Proceedings of the Royal Society B</em> 291: 20240967. doi:10.1098/rspb.2024.0967<br>
 <br>
 and (now out-of-date) preprint:<br>
 <br>
